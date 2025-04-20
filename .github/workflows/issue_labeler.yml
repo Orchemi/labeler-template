@@ -1,0 +1,22 @@
+# .github/workflows/pr_issue_labeler.yml
+
+name: "Issue Labeler"
+
+permissions:
+  contents: read
+  issues: write
+
+on:
+  issues:
+    types: 
+      - opened
+      - reopened
+      - edited
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: srvaroa/labeler@v1.13.0
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
