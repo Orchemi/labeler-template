@@ -53,16 +53,26 @@ labels:
     files:
       - ".*\\/__tests__\\/.*"
 
+  - label: "♻️workflow"
+    files:
+      - ".github/.*"
+      - ".*\\.yml"
+
   ### Branch (PRs only) ---------------------------------------------
   - label: "✨feature"
     branch: "(feat|feature)/.*"
 
   - label: "🛠️bugfix"
-    branch: "(fix|hotfix)/.*"
+    branch: "fix/.*"
+
+  - label: "🚨hotfix"
+    branch: "hotfix/.*"
 
   - label: "🧹refactor"
     branch: "(refact|refactor)/.*"
 
+  - label: "🏷️ release"
+    branch: "release/.*"
   ### Size (PRs only) -----------------------------------------------
   - label: "📏diff:XS"
     size:

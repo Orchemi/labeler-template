@@ -18,6 +18,9 @@ LABELS=(
   "F87171 / 🛠️bugfix / 오류 수정"
   "A78BFA / 🧹refactor / 코드 리팩토링"
   "34D399 / ✅test / 테스트 코드 추가"
+  "0E8A16 / ♻️workflow / CI/CD 및 template 등"
+  "DF416E / 🚨hotfix / 긴급 수정"
+  "1B35BA / 🏷️ release / release 레벨"
   ## Size
   "F3F4F6 / 📏diff:XS / 50라인 이내 변경"
   "E5E7EB / 📏diff:S / 50~150라인 변경"
